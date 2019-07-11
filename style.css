@@ -1,0 +1,132 @@
+html {
+    font-size: 10px;
+    height: 100%;
+    background: 
+      /* top, transparent red, faked with gradient */ 
+      linear-gradient(
+        rgba(153, 153, 153, 0.65), 
+        rgb(14, 159, 243)
+      ),
+      /* bottom, image */
+      url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+    
+    
+    background-size: auto 100% ;
+    opacity: 29;
+    justify-content: center;
+  }
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    grid-gap: 5% 5%;
+    margin: auto;
+    padding-top: 10px;
+    width: 70%;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    color: rgb(202, 29, 52);
+    align-items: center;
+    background: #4faeee;
+    font-size: 6em;
+  }
+  
+  h2 {
+    text-align: center;
+     border: .1rem solid black;
+    border-radius: .5rem;
+    color: #ffffff;
+    align-items: center;
+    background: rgb(122, 119, 119);
+    font-size: 3em;
+    
+    
+  }
+  
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    text-align: center;
+    color: white;
+    background: rgba(13, 60, 214, 0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #38967a;
+    box-shadow: 0 0 1rem #1a8882;
+  }
+  
+  desc {
+    display: block;
+    font-size: 5rem;
+  }
+  
+  
+  
+  .sound {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #eeeb4f;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
