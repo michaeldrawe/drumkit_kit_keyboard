@@ -6,98 +6,121 @@
   <meta name="viewport" content="width=device-width">
   <title>Javascript Drum Kit (Keyboard)</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div>
-    <h1>Mobile Drumkit</h1>
-  </div>
-  <div class="container">
-    <div class="btn-group btn-group-justified">
-      
-      <a type="button" class="btn btn-primary " role="button" ></a>
-   
-      <button type="button" class="btn  btn-primary"  role="button">S</button>
-   
-      <button type="button" class="btn  btn-primary" role="button">D</button>
-    </div>
-    <div class="row">
-      <div class="btn-group btn-group-justified">
-      
-        <button type="button" class="btn btn-primary " role="button" >A</button>
+  <header><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Mobile Drumkit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Original Toolkit <span class="sr-only">(current)</span></a>
+        </li>
      
-        <button type="button" class="btn  btn-primary"  role="button">S</button>
-     
-        <button type="button" class="btn  btn-primary" role="button">D</button>
-      </div>
+      </ul>
     </div>
-    <div class="row">
-      <div class="col-4">
-        <button type="button" class="btn  btn-primary btn-lg btn-block" role="button">F</button>
-      </div>
-      <div class="col-4">
-        <button type="button" class="btn  btn-primary btn-lg btn-block" role="button">G</button>
-      </div>
-      <div class="col-4">
-        <button type="button" class="btn  btn-primary btn-lg btn-block" role="button">H</button>
-      </div>
-    </div>
+  </nav></header>
+
   
-    <div class="row">
-      <div class="col-4">
-        <button type="button" class="btn  btn-primary btn-lg btn-block" role="button">J</button>
-      </div>
-      <div class="col-4">
-        <button type="button" class="btn  btn-primary btn-lg btn-block" role="button">K</button>
-      </div>
-      <div class="col-4">
-        <button type="button" class="btn  btn-primary btn-lg btn-block" role="button">L</button>
-      </div>
-    </div>
-  </div>
-
-
-  </div>
-
-  <div data-key="65" class="key">
+  <div class="container">
+  
+   <div class="row"><button 
+    type="button" 
+    class="key btn btn-secondary sound" 
+    role="button" 
+    onClick="soundClap()"
+    data-key="65" 
+  >
     <desc>A</desc>
     <span class="sound">clap</span>
-  </div>
-  <div data-key="83" class="key">
-    <desc>S</desc>
-    <span class="sound">hihat</span>
-  </div>
-  <div data-key="68" class="key">
-    <desc>D</desc>
-    <span class="sound">kick</span>
+  </button> <button 
+  type="button" 
+  class="key btn btn-secondary sound"  
+  role="button" 
+  onClick="soundHihat()"
+  data-key="83"
+> 
+  <desc>S</desc>
+  <span class="sound">hihat</span>
+</button> <button 
+type="button" 
+class="key btn btn-secondary sound" 
+role="button"
+onClick="soundKick()"
+data-key="68" 
+>
+<desc>D</desc>
+<span class="sound">Kick</span>
+</button><button 
+type="button" 
+class="key btn btn-secondary sound" role="button" 
+onClick="soundOpenhat() "
+data-key="70" 
+>
+<desc>F</desc>
+<span class="sound">openhat</span>
+</button>
+
+<button 
+type="button" 
+class="key btn  btn-secondary sound row" role="button" 
+onClick="soundBoom()"
+data-key="71" 
+>
+<desc>G</desc>
+<span class="sound">boom</span>
+</button>
+
+<button 
+type="button" 
+class="key btn  btn-secondary sound" role="button" 
+onClick="soundRide() "
+data-key="72" 
+>
+<desc>H</desc>
+<span class="sound">ride</span>
+</button><button 
+type="button" 
+class="key btn  btn-secondary sound" role="button"
+onClick="soundSnare() "
+data-key="74" 
+>
+<desc>J</desc>
+<span class="sound">snare</span>
+</button>
+
+<button 
+type="button" 
+class="key btn  btn-secondary sound" role="button"
+onClick="soundTom() "
+data-key="75" 
+>
+<desc>K</desc>
+<span class="sound">tom</span>
+</button>
+
+<button 
+type="button" 
+class="key btn btn-secondary sound" role="button" 
+onClick="soundTink()"
+data-key="76" 
+>    
+<desc>L</desc>
+<span class="sound">tink</span>
+</button></div>
+      
+      
+     
   </div>
 
-  <div data-key="70" class="key">
-    <desc>F</desc>
-    <span class="sound">openhat</span>
-  </div>
-  <div data-key="71" class="key">
-    <desc>G</desc>
-    <span class="sound">boom</span>
-  </div>
-  <div data-key="72" class="key">
-    <desc>H</desc>
-    <span class="sound">ride</span>
-  </div>
+  
 
-  <div data-key="74" class="key">
-    <desc>J</desc>
-    <span class="sound">snare</span>
-  </div>
-  <div data-key="75" class="key">
-    <desc>K</desc>
-    <span class="sound">tom</span>
-  </div>
-  <div data-key="76" class="key">
-    <desc>L</desc>
-    <span class="sound">tink</span>
-  </div>
 
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
