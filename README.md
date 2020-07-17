@@ -1,4 +1,4 @@
-# drum_kit_keyboard
+# Drum Kit Keyboard
 
 Drum kit within browser, use a physical keyboard to play.
 
